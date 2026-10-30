@@ -1,0 +1,19 @@
+npm init / npm init -y = Install package manager
+npm install parcel / npm = install -D parcel
+npx parcel index.html = running application
+npx parcel build index.html = product build
+npm start / npm run start
+npm run build
+
+npm install react / npm i react
+npm install react-dom / npm i react-dom
+
+
+
+
+
+<script src="./app.js" type="module"></script>
+
+
+npm - package manager
+npx - package executor

@@ -1,0 +1,32 @@
+{
+  "name": "react",
+  "version": "1.0.0",
+  "description": "react learning app",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rushin-gh/React-Learn.git"
+  },
+  "keywords": [
+    "react",
+    "reactdom"
+  ],
+  "author": "Rushikesh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rushin-gh/React-Learn/issues"
+  },
+  "homepage": "https://github.com/rushin-gh/React-Learn#readme",
+  "devDependencies": {
+    "parcel": "^2.16.4"
+  },
+  "dependencies": {
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
+  },
+  "browserslist": [
+    "last 2 versions"
+  ]
+}
