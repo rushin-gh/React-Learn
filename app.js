@@ -1,29 +1,36 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-// React element
-const jsx = (
-  <h1 id="heading2" className="headGroup">
-    Hello world from JSX!
-  </h1>
-);
-
 // React Component
-const Heading = () => {
+const Page = () => {
   return (
-    <h1 id="heading2" className="headGroup">
-      Hello world from JSX!
-    </h1>
+    <div id="page">
+      <Title />
+      <Navbar />
+      <Body />
+    </div>
   );
 };
 
-const Heading2 = () => (
-  <h1 id="heading2" className="headGroup">
-    Hello world from JSX!
-  </h1>
-);
+function Navbar() {
+  return <div>Home Main Contact</div>;
+}
+
+const Title = function () {
+  return (
+    <div>
+      <h2>React Learning</h2>
+    </div>
+  );
+};
+
+const Body = () => {
+  return (
+    <div>
+      <p>Im Learning react</p>
+    </div>
+  );
+};
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-
-root.render(Heading);
-root.render(jsx);
+root.render(<Page />);
