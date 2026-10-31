@@ -6,15 +6,10 @@ const Page = () => {
   return (
     <div id="page">
       <Title />
-      <Navbar />
       <Body />
     </div>
   );
 };
-
-function Navbar() {
-  return <div>Home Main Contact</div>;
-}
 
 const Title = function () {
   return (
@@ -24,13 +19,24 @@ const Title = function () {
   );
 };
 
+const content = (
+  <div>
+    <p>This is body content</p>
+  </div>
+);
+
 const Body = () => {
   return (
     <div>
-      <p>Im Learning react</p>
+      <p>{100}</p>
+      <p>{100 + 200}</p>
+      {content}
     </div>
   );
 };
 
+const doc = <Page />;
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<Page />);
+// root.render(<Page />);
+root.render(doc);
